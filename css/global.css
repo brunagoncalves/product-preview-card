@@ -35,14 +35,10 @@ main {
   justify-content: center;
 }
 
-.card-image-mobile {
+.card-image {
   display: block;
   width: 100%;
   border-radius: 0.625rem 0.625rem 0 0;
-}
-
-.card-image-desktop {
-  display: none;
 }
 
 .card-content {
@@ -59,7 +55,7 @@ main {
   color: var(--very-dark-blue);
 }
 
-.card-name {
+.card-category {
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 500;
@@ -123,16 +119,13 @@ main {
     grid-template-columns: 1fr 1fr;
   }
 
-  .card-content {
-    padding: 2rem;
-    border-radius: 0 0.625rem 0.625rem 0;
+  .card-image {
+    border-radius: 0.625rem 0 0 0.625rem;
   }
 
-  .card-image-desktop {
-    display: initial;
-    display: block;
-    width: 100%;
-    border-radius: 0.625rem 0 0 0.625rem;
+  .card-content {
+    padding: 2rem;
+    border-radius: 0 10px 10px 0;
   }
 
   .card-name {
@@ -140,14 +133,10 @@ main {
   }
 
   .card-description {
-    margin-top: 1.5rem;
-    margin-bottom: 1.8125rem;
+    margin: 1.5rem 0 1.875rem 0;
   }
 
   .card-price {
     margin-bottom: 1.875rem;
-  }
-  .card-image-mobile {
-    display: none;
   }
 }

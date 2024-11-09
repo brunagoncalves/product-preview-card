@@ -14,13 +14,15 @@
   </head>
   <body>
     <main>
-      <article class="card">
-        <header>
-          <img class="card-image-mobile" src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
-          <img class="card-image-desktop" src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum">
-        </header>  
-        <div class="card-content">
-          <p class="card-name">Perfume</p>
+      <div class="card">
+        <figure>
+          <picture>
+            <source media="(min-width: 40rem)" srcset="images/image-product-desktop.jpg">
+            <img class="card-image" src="images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum">
+          </picture>
+        </figure>
+        <article class="card-content">
+          <h2 class="card-category ">Perfume</h2>
           <h1 class="card-title">Gabrielle Essence Eau De Parfum</h1>
           <p class="card-description">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
             Perfumer-Creator for the House of CHANEL.
@@ -31,12 +33,12 @@
           </div>
           <footer>
             <button class="card-btn" type="button" aria-label="Add Gabrielle Essence Eau De Parfum to Cart">
-              <img src="images/icon-cart.svg" alt="Icon Cart" aria-hidden="true">
+              <img src="images/icon-cart.svg" alt="" aria-hidden="true">
               Add to Cart
             </button>
           </footer>
-        </div>        
-      </article>
+        </article>        
+      </div>
     </main>
 
     <div class="attribution">
